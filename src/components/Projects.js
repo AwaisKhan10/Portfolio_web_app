@@ -48,6 +48,12 @@ export const Projects = () => {
       description: "Ecommerce website",
       imgUrl: projImg6,
     },
+    {
+      title: "https://apps.apple.com/pk/app/lamma-app/id1605119039",
+      description:
+        "Lamma mobile application is all about planning your event whether it is a Birthday party, wedding, Family Gathering, or even a business gathering at your workplace",
+      imgUrl: App1,
+    },
   ];
   const Approjects = [
     {
@@ -56,6 +62,43 @@ export const Projects = () => {
         "Lamma mobile application is all about planning your event whether it is a Birthday party, wedding, Family Gathering, or even a business gathering at your workplace",
       imgUrl: App1,
     },
+  ];
+  const Webprojects = [
+    {
+      title: "https://spatay.com/",
+      description: "Travel and Tourism Website",
+      imgUrl: projImg1,
+    },
+    {
+      title: "https://mrbookpeshawar.com",
+      description: "Online Books Libiray",
+      imgUrl: projImg2,
+    },
+    {
+      title: "https://softgalaxies.com/",
+
+      description: "Software comapny services Website",
+      imgUrl: projImg3,
+    },
+    {
+      title: "https://www.horecaffe.com/",
+
+      description: "Furniture Website",
+      imgUrl: projImg4,
+    },
+    {
+      title: "https://hirecardrive.com/",
+
+      description: "Rent a Car Website",
+      imgUrl: projImg5,
+    },
+    {
+      title: "https://rains.com/",
+
+      description: "Ecommerce website",
+      imgUrl: projImg6,
+    },
+    
   ];
 
   return (
@@ -85,13 +128,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">All</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Mobile Applications</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Websites</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -115,13 +158,11 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Row>
+                          {Webprojects.map((Webproject, index) => {
+                            return <ProjectCard key={index} {...Webproject} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
