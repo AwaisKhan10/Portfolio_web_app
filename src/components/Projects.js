@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/softgalaxy.png";
 import projImg4 from "../assets/img/horecaffe.png";
 import projImg5 from "../assets/img/hirecardive.png";
 import projImg6 from "../assets/img/rains.png";
+import App1 from "../assets/img/lamma.jpg";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -47,7 +48,14 @@ export const Projects = () => {
       description: "Ecommerce website",
       imgUrl: projImg6,
     },
-    
+  ];
+  const Approjects = [
+    {
+      title: "https://apps.apple.com/pk/app/lamma-app/id1605119039",
+      description:
+        "Lamma mobile application is all about planning your event whether it is a Birthday party, wedding, Family Gathering, or even a business gathering at your workplace",
+      imgUrl: App1,
+    },
   ];
 
   return (
@@ -99,14 +107,12 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {Approjects.map((Approject, index) => {
+                            return <ProjectCard key={index} {...Approject} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
