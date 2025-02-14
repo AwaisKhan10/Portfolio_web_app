@@ -76,7 +76,7 @@ export const Banner = () => {
                   </h1>
                   <p>
                     As a Software, I am passionate about creating innovative and
-                    user-friendly websites{" "}
+                    user-friendly Websites and Applications{" "}
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
