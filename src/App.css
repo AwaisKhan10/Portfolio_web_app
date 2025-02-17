@@ -806,10 +806,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .review-card {
   background-color: #1a1a1a;
   border-radius: 12px;
+  height: 100%;
+  width: 100%; /* Ensures full width inside the container */
   padding: 20px;
   border: 1px solid #333;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px; /* Add margin between cards */
+}
+
+/* Slick Carousel Styles to Add Gaps */
+.slick-slide {
+  padding: 0 10px; /* Adds horizontal spacing between slides */
+}
+
+.slick-list {
+  margin: 0 -10px; /* To adjust the overall carousel margin */
 }
 
 .review-header {
@@ -820,8 +833,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .review-img {
-  width: 80px;
-  height: 80px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
@@ -889,4 +902,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     text-align: center;
     display: block;
   }
+}
+
+.ShowLess {
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.ViewMore {
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
 }

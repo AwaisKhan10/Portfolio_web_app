@@ -18,7 +18,11 @@ export const Sidebar = () => {
           <img src="/nav-icon1.svg" alt="linkedin" />
         </a>
 
-        <a href="#">
+        <a
+          href="https://www.instagram.com/flutter_dev10/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={navIcon3} alt="" />
         </a>
         <a
@@ -36,7 +40,11 @@ export const Sidebar = () => {
         >
           <img src="/githubicons.svg" alt="" />
         </a>
-        <a href="#">
+        <a
+          href="https://www.upwork.com/freelancers/~01ff42d3876066834e?viewMode=1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src="/upwork.svg" alt="" />
         </a>
       </div>

@@ -26,13 +26,13 @@ export const ProjectCard = ({
               {techStack?.map((tech, index) => (
                 <a
                   key={index}
-                  href={`https://www.google.com/search?q=${tech}`}
+                  href={tech.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="badge  me-1 "
                   onClick={(e) => e.stopPropagation()}
                 >
-                  {tech}
+                  {tech.name}
                 </a>
               ))}
             </div>
