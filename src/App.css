@@ -835,6 +835,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .review-img {
   width: 220px;
   height: 220px;
+  min-width: 220px;
+  min-height: 220px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
